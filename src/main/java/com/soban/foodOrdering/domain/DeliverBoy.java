@@ -5,15 +5,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class DeliverBoy {
 
     @Id
     @GeneratedValue
-    private long id;
+    private int id;
 
-    private String name;
-    private String email;
-    private String password;
-    private int otp;
-    private char location;
+    private char startLocation;
+    private char dropLocation;
+    private int departTime;
+
 }
